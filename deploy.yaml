@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: devops-app-c5
-        image: manjukolkar007/test-dev:latest
+        image:sureshav2105/app:latest
         ports:
         - containerPort: 80
 ---
@@ -39,7 +39,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: cicd-project.duckdns.org
+  - host: cicd-pro.duckdns.org
     http:
       paths:
       - path: /
