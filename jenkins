@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'manjukolkar007/test-dev:latest'
+        DOCKER_IMAGE = 'sureshav2105/app:latest'
         DEPLOY_FILE  = 'deploy.yaml'
-        DOMAIN       = 'cicd-project.duckdns.org'
+        DOMAIN       = 'cicd-pro.duckdns.org'
     }
 
     stages {
@@ -42,7 +42,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git branch: "${env.BRANCH_NAME}", url: 'https://github.com/manjukolkar/scroll-web.git'
+                git branch: "${env.BRANCH_NAME}", url: 'https:https://github.com/suresha2105/project-1.git
             }
         }
 
